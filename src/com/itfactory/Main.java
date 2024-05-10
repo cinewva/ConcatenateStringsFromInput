@@ -3,28 +3,23 @@ package com.itfactory;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
-        //mno problema 2
-        //Initializez obiectul prin care am capabilitatea sa citesc de la tastatura
+    public static void main(String[] args) {
+        // Problem 2
+        // Initialize the Scanner object to read from the keyboard
         Scanner scanner = new Scanner(System.in);
 
-        //Afisesz un mesaj pentru cererea textului de la tastatura
-        //Se va introduce textul cerut dupa care se apasa tasta Enter
-        //Linia de cod care va citi propriuzis textul de la tastatura
-        //Definesc variable de tip String(sir de caractere) unde se va afisa textul introdus
-        System.out.print("Introduceti numele dumneavoastra: ");
-        String numelePersoanei = scanner.nextLine();
+        // Display a message prompting for text input
+        // The user will enter the requested text and press Enter
+        // The code line that will actually read the text from the keyboard
+        // Define a String variable to store the entered text
+        System.out.print("Enter your name: ");
+        String personName = scanner.nextLine();
 
-        //preluam prenumele aici si afisez mesajul ca sa stiu ce sa scriu
-        System.out.print("Introduceti prenumele dumneavoastra: ");
-        String prenumelePersoanei = scanner.nextLine();
+        // Get the last name here and display a message to know what to write
+        System.out.print("Enter your last name: ");
+        String personLastName = scanner.nextLine();
 
-
-
-
-        //Afisez numele si prenumele persoanei introdus de la tastatura
-        System.out.println("Numele introdus este: " + numelePersoanei + " " + prenumelePersoanei);
-
-
+        // Display the person's name and last name entered from the keyboard
+        System.out.println("The entered name is: " + personName + " " + personLastName);
     }
 }
